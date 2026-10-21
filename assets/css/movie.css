@@ -1,0 +1,180 @@
+.movie {
+    padding: 100px 0;
+}
+.movie_title {
+    margin-bottom: 60px;
+}
+.movie_title ul {
+    display: flex;
+    width: 848px;
+    margin: 0 auto;
+}
+.movie_title ul li {
+    width: 25%;
+    /* flex: 1; */
+    text-align: center;
+    border: 1px solid #9c9c9c;
+}
+.movie_title ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #9c9c9c;
+}
+.movie_title ul li.active a {
+    background-color: #666;
+    color: #fff;
+}
+
+.poster {
+    position: relative;
+    cursor: pointer;
+}
+.poster img {
+    display: block;
+}
+.poster .rank {
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 50px;
+    font: 50px;
+    background-color: #391b6a;
+    color: #fff;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.poster .mx {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+}
+.poster .mx span {
+    display: block;
+    width: 103px;
+    height: 25px;
+}
+.poster .mx span.m {
+    background-position: 0 -37px;
+    margin-bottom: 5px;
+}
+.poster .mx span.b {
+    background-position: 0 -60px;
+}
+
+.poster_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+.poster_overlay .summery {
+    padding: 40px 30px 0 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* 보여줄 줄 수 설정 */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* 넘치는 텍스트 숨김 */
+}
+.poster_overlay .score {
+    padding: 5px 0;
+    border-top: 1px solid #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score span {
+    font-size: 15px;
+    margin-right: 10px;
+}
+.score strong {
+    font-size: 30px;
+    font-weight: 300;
+}
+.poster:hover .poster_overlay {
+    opacity: 1;
+}
+
+/* infor */
+
+.infor {
+    background-color: #fff;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #555555d8;
+    box-sizing: border-box;
+}
+.infor h3 {
+    margin-bottom: 10px;
+}
+.infor h3 span {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 8px;
+}
+.infor h3 span.all {
+    background-position: -78px -89px;
+}
+.infor h3 span.al2 {
+    background-position: 0px -89px;
+}
+.infor h3 span.al5 {
+    background-position: -26px -89px;
+}
+.infor h3 span.al9 {
+    background-position: -52px -89px;
+}
+
+.infor h3 strong {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.infor .infor_btn {
+    display: flex;
+    gap: 2%;
+}
+.infor .infor_btn a {
+    flex: 1;
+    display: block;
+    font-size: 17px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+    .movie_title ul {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
