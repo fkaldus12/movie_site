@@ -20,6 +20,10 @@ var swiper = new Swiper(".slider2", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     breakpoints: {
         601: {
             slidesPerView: 2,
