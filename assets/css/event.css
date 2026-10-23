@@ -1,0 +1,97 @@
+.event {
+    padding: 0 0 100px 0;
+}
+
+.event h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.event img {
+    display: block;
+}
+.event_left {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event_box1 {
+    width: 100%;
+    margin-bottom: 2.25%;
+    box-shadow: 0 0 10px #00000071;
+}
+
+.event_box2,
+.event_box3 {
+    width: 50%;
+    box-shadow: 0 0 10px #00000071;
+}
+
+.event_right {
+    width: 32%;
+    box-shadow: 0 0 10px #00000071;
+}
+
+.event_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+}
+@media (max-width: 768px) {
+    #event .row {
+        padding: 0 24px;
+        background-color: #fff;
+    }
+    .event {
+        padding: 24px 0;
+    }
+    .event h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .event_right {
+        display: none;
+    }
+    .event_left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #event {
+        padding: 16px;
+        padding-top: 0;
+    }
+    .event {
+        padding: 16px 0;
+    }
+    #event .row {
+        padding: 0 16px;
+    }
+}
+@media (max-width: 480px) {
+    #event {
+        padding: 12px;
+        padding-top: 0;
+    }
+    .event {
+        padding: 12px 0;
+    }
+    #event .row {
+        padding: 0 12px;
+    }
+}
+@media (max-width: 320px) {
+}
