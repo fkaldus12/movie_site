@@ -244,9 +244,24 @@
     }
 }
 @media (max-width: 600px) {
+    .help {
+        padding-bottom: 0;
+    }
     .service ul li {
         width: 50%;
         height: 100px;
+    }
+    #help {
+        padding: 16px;
+        padding-top: 0;
+    }
+
+    .help_box1 {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .help_box2 {
+        padding: 16px;
     }
 }
 @media (max-width: 480px) {
