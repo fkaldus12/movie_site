@@ -3,6 +3,11 @@
 #mNav {
     background-color: #aa0808;
     display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2100;
 }
 
 #mNav .ham {
@@ -18,9 +23,31 @@
 }
 
 #mNav ul {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 57px;
+    background-color: #6f2bc7;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
 }
-
+#mNav ul.active {
+    transform: translateX(0);
+}
+#mNav ul li {
+    padding: 24px;
+    border-bottom: 1px solid #25035257;
+    text-align: center;
+}
+#mNav ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+#mNav ul li a:hover {
+    color: #303030;
+}
 /* 미디어 쿼리 */
 
 @media (max-width: 1024px) {

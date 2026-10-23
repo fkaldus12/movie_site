@@ -16,6 +16,10 @@
     width: 66%;
     display: flex;
     flex-wrap: wrap;
+
+    transform: translateY(600px);
+    opacity: 0;
+    transition: all 0.33s ease-in-out;
 }
 .event_box1 {
     width: 100%;
@@ -32,11 +36,24 @@
 .event_right {
     width: 32%;
     box-shadow: 0 0 10px #00000071;
+
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 0.33s ease-in-out;
 }
 
 .event_inner {
     display: flex;
     justify-content: space-between;
+}
+
+.event_left.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+.event_right.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* 미디어 쿼리 */

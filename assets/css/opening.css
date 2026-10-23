@@ -109,11 +109,28 @@
     }
     .open_box > div {
         width: 30%;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
+    .open_box > div.show {
+        transform: translateY(0);
+        opacity: 1;
     }
     .open_box > div p {
         font-size: 20px;
     }
+    .open_box > div:nth-child(1) {
+        transition-delay: 0s;
+    }
+    .open_box > div:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+    .open_box > div:nth-child(3) {
+        transition-delay: 0.6s;
+    }
 }
+
 @media (max-width: 768px) {
     .opening h2 span.grand {
         width: 183px;
