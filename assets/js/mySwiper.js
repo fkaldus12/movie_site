@@ -6,6 +6,10 @@ var swiper = new Swiper(".hero", {
     pagination: {
         el: ".swiper-pagination",
     },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 });
 
 // var swiper = new Swiper(".slider2", {

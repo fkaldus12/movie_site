@@ -95,10 +95,19 @@
     color: #38116a;
     border: 1px solid #38116a;
 }
+
+.new_right .btn a.white:hover {
+    background-color: #38116a;
+    color: #fff;
+}
 .new_right .btn a.purple {
     color: #fff;
     background-color: #38116a;
     border: 1px solid #6f2bc7;
+}
+.new_right .btn a.purple:hover {
+    color: #38116a;
+    background-color: #fff;
 }
 
 .ui_select1 {

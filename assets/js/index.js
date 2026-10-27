@@ -81,14 +81,28 @@ window.addEventListener("scroll", () => {
         document.querySelector(".event_right").classList.add("show");
     }
 
-    let opening = document.querySelector(".opening");
+    let opening = document.querySelector("#opening");
     let openingTop = opening.offsetTop;
-
     let openBox = document.querySelectorAll(".open_box > div");
 
-    if (scrollTop >= openingTop) {
+    if (scrollTop > openingTop) {
         openBox.forEach((div) => {
-            div.classList.add("show");
+            div.classList.add("bounce");
+        });
+    } else {
+        openBox.forEach((div) => {
+            div.classList.remove("bounce");
         });
     }
+
+    // let opening = document.querySelector(".opening");
+    // let openingTop = opening.offsetTop;
+
+    // let openBox = document.querySelectorAll(".open_box > div");
+
+    // if (scrollTop >= openingTop) {
+    //     openBox.forEach((div) => {
+    //         div.classList.add("show");
+    //     });
+    // }
 });
